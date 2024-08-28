@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",                                  /* Linguaggio JS di output (ES6). */
+    "module": "commonjs",                             /* Moduli CommonJS, usati da Node.js. */
+    "outDir": "./dist",                               /* Directory in cui saranno emessi i file compilati. */
+    "rootDir": "./src",                               /* Directory radice dei file sorgente. */
+    "strict": true,                                  /* Abilita il controllo rigoroso dei tipi. */
+    "esModuleInterop": true,                         /* Migliora la compatibilità con CommonJS. */
+    "forceConsistentCasingInFileNames": true,        /* Verifica la coerenza della distinzione maiuscole/minuscole nei nomi file. */
+    "skipLibCheck": true                             /* Salta il controllo dei tipi nei file .d.ts. */
+  },
+  "include": ["src/**/*"],                           /* Includi tutti i file nella cartella src. */
+  "exclude": ["node_modules", "dist"]                /* Escludi la cartella node_modules e dist. */
+}
