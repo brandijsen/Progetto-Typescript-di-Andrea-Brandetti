@@ -1,7 +1,7 @@
 // src/interfaces.ts
 
 export interface IProduct {
-    type: string;  // Swimsuit, Sarong, Hat
+    type: string;  
     id: string;
     size: string;
     color: string;
