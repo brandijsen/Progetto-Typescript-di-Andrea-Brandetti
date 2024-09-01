@@ -1,12 +1,11 @@
-// src/interfaces.ts
-
 export interface IProduct {
-    type: string;  
+    type: string;
+    line: string;
     id: string;
     size: string;
     color: string;
-    status: 'available' | 'sold out';
-    assignToCustomer(customer: ICustomer): void;
+    status: 'available' | 'not available';
+    assignToCustomer(customer: ICustomer): Promise<void>;
 }
 
 export interface ICustomer {
@@ -20,6 +19,7 @@ export interface ICustomer {
 export interface IProductionProcess {
     name: string;
     description: string;
+    lines: string[];
     productsInProduction: IProduct[];
-    addProduct(product: IProduct): void;
+    addProduct(product: IProduct): Promise<void>;
 }
